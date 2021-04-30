@@ -1,0 +1,183 @@
+/* --- ALLGEMEIN --- */
+p, h1, h2, h3, a, dd, dt{
+    font-family:Arial, Helvetica, sans-serif;  
+}
+.content {
+    padding: 10px;
+}
+
+
+/* --- HEADER --- */
+header { 
+    background-color: #0d3b66;/*#240C7D;*/
+    text-align: center;
+    color: white;
+    margin: 0px;
+    padding: 2px;
+}
+.hTextLogo { 
+    color: #FF714D; 
+    font-size: 30px;  
+    text-decoration: none; 
+}
+
+
+/* --- NAVIGATION --- */
+nav {
+    background-color: #DFF1FF; /*#D1E6ED;*/
+}
+#nFlexTop {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+#nFlexKategorien {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.nText {
+    color: black;
+    text-align: center; 
+    text-decoration: none;
+}
+.nText:hover{
+    color:blue;
+}
+.nImage{
+    height: 40px;
+}
+
+
+/* --- FOOTER --- */
+footer {
+    background-color: #0d3b66; 
+    color: white;
+}
+.fDateTime {
+    text-align: right;
+}
+.fLink {
+    color: white;
+    text-decoration: none;
+}
+.fLink:hover{
+    color: aquamarine;
+}
+#fFlex {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* --- IMPRESSUM --- */
+.iLawLink{
+    text-decoration: underline;
+    color: black;
+}
+
+
+/* --- UEBERSICHTSSEITE --- */
+#uFlex{
+    display: flex;
+}
+#uFlexProducts {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+.uOverview {
+    padding: 5px;
+}
+.uProduct {
+    margin: 5px;
+    padding: 5px;
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+}
+.uLink{
+    color: black;
+    text-decoration: none;
+}
+.uProduct:hover{
+    background-color: lightgray;
+}
+.uProductTitle {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.uPrice {
+    margin-top: 25px;
+}
+.uFlexPriceHeart {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    padding: 0px;
+}
+@media (min-width: 576px) {
+    #uFilter {
+        width: 30%;
+    }
+}
+@media (max-width: 575px) {
+    #uFlex {
+        display: flex;
+        flex-direction: column;
+    }
+    #uFlexProducts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+/* --- DETAILSEITE --- */
+.dRatings {
+    background-color: #D6E5EA;
+    color: black;
+    padding: 2px;
+    margin-left: 20px;
+}
+.dRaitingAuthor{
+    font-weight: bold;
+}
+.dRaitingDescription{
+    margin-left: 15px;
+}
+#dFlexProfil{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+#dFlexProduct{
+    display: flex;
+}
+#dFlexDiscription{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+@media (max-width: 575px) {
+    #dFlexProfil {
+        display: flex;
+        flex-direction: column;
+    }
+    #dProductImg {
+        width: 100%;
+    }
+}
+
+
+/* --- INDEX --- */
+#iImgPreisvergleich {
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+}

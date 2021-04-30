@@ -1,0 +1,19 @@
+<!-- templates/html-structure.hbs -->
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/styles/style.css">
+    <title>{{ page.title }}</title>
+</head>
+
+<body>
+    {{ include 'header' }}
+    {{ include 'navigation' }}
+    {{ content }}
+    {{ include 'footer' }}
+</body>
+
+</html>

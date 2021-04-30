@@ -1,0 +1,86 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "title": "<title>",
+            "short": "<short-description>",
+            "description": "<long-description>",
+            "price": "<price>",
+            "photo": {
+                "portrait": "hochformat.png",
+                "landscape": "querformat.png"
+            }
+        },
+        {
+            "id": 2,
+            "title": "<title>",
+            "short": "<short-description>",
+            "description": "<long-description>",
+            "price": "<price>",
+            "photo": {
+                "portrait": "hochformat.png",
+                "landscape": "querformat.png"
+            }
+        },
+        {
+            "id": 3,
+            "title": "<title>",
+            "short": "<short-description>",
+            "description": "<long-description>",
+            "price": "<price>",
+            "photo": {
+                "portrait": "hochformat.png",
+                "landscape": "querformat.png"
+            }
+        },
+        {
+            "id": 4,
+            "title": "<title>",
+            "short": "<short-description>",
+            "description": "<long-description>",
+            "price": "<price>",
+            "photo": {
+                "portrait": "hochformat.png",
+                "landscape": "querformat.png"
+            }
+        },
+        {
+            "id": 5,
+            "title": "<title>",
+            "short": "<short-description>",
+            "description": "<long-description>",
+            "price": "<price>",
+            "photo": {
+                "portrait": "hochformat.png",
+                "landscape": "querformat.png"
+            }
+        },
+        {
+            "id": 6,
+            "title": "<title>",
+            "short": "<short-description>",
+            "description": "<long-description>",
+            "price": "<price>",
+            "photo": {
+                "portrait": "hochformat.png",
+                "landscape": "querformat.png"
+            }
+        }
+
+    ],
+    "deals": [
+        { "product-id": 1, "shop": "Shop A", "prize": "<prize>"},
+        { "product-id": 1, "shop": "Shop B", "prize": "<prize>"},
+        { "product-id": 1, "shop": "Shop C", "prize": "<prize>"}
+    ],
+    "ratings": [
+        { "product-id": 1, "rating": 4, "author": "Michael Müller", "text": "Alles Top, wunderbares Produkt. Eine klare 4 von 5." },
+        { "product-id": 1, "rating": 4, "author": "Tina Meier", "text": "Bis auf den Versand, alles gut." }
+    ],
+    "categories":[
+        {"title": "Kategorie A"},
+        {"title": "Kategorie B"},
+        {"title": "Kategorie C"},
+        {"title": "Kategorie D"}
+    ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "web-anwendung",
+  "version": "1.0.0",
+  "description": "Übung Web-Anwendungen an der Fachhochschule Wedel im Sommersemester 2021",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "weba_052",
+  "license": "ISC",
+  "dependencies": {
+    "fhw-web": "^1.1.5"
+  }
+}

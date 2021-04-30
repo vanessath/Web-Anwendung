@@ -1,0 +1,35 @@
+---
+{
+"title":"Übersicht",
+"template":"../templates/html-structure.hbs",
+}
+---
+<div class="content">
+    <div id="uFlex">
+        <div id="uFilter">
+            <h3>Filter</h3>
+            <p>Diverse Filtermöglichkeiten gibt es ab Aufgabe 02.</p>
+            <hr />
+        </div>
+
+        <div id="uOverview">
+            <h3>Übersicht</h3>
+
+            <div id="uFlexProducts">
+                {{#each global.products}}
+                <a class="uLink" href="/detailseite">
+                    <div class="uProduct">
+                        <img src="../public/images/hochformat.png" alt="Hochformatproduktbild">
+                        <p class="uProductTitle">{{ this.title }}</p>
+                        <p>{{ this.short }}</p>
+                        <div class="uFlexPriceHeart">
+                            <p class="uPrice">ab: {{ this.price }} €</p>
+                            <p class="uheart">&#10084;</p>
+                        </div>
+                    </div>
+                </a>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>

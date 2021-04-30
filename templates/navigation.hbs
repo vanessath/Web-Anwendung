@@ -1,0 +1,15 @@
+<!-- templates/navigation.hbs -->
+<nav>
+    <div id="nFlexTop">
+        <img class="nImage" src="../public/images/suche.png" alt="Suchleiste">
+        <h3 id="nMerkliste">&#10084; Merkliste</h3>
+    </div>
+
+    <div id="nFlexKategorien">
+        {{#each global.categories}}
+        <a class="nText" href="/uebersichtsseite">
+            <p>{{ this.title }}</p>
+        </a>
+        {{/each}}
+    </div>
+</nav>

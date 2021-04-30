@@ -1,0 +1,42 @@
+---
+{
+"title":"Detailseite",
+"template":"../templates/html-structure.hbs"
+}
+---
+<div class="content">
+    <div id="dFlexProfil">
+        <div id="dFlexProducts">
+            <h1>&#10084; {{ global.products.0.title }}</h1>
+            <img id="dProductImg" src="../public/images/querformat.png" alt="Hochformatproduktbild">
+        </div>
+
+        <div id="dFlexDiscription">
+            <p>3 Angebote: XX,XX€ - YY,YY€</p>
+            <p>2 Produktberwertungen: &#9733; &#9733; &#9733; &#9733; &#9734; </p>
+            <p>{{ global.products.0.description }}</p>
+        </div>
+    </div>
+
+    <div>
+        <h1>Preisvergleich</h1>
+        <dl>
+            {{#each global.deals}}
+            <dt>{{ this.shop }}</dt>
+            <dd>{{ this.prize }}</dd>
+            {{/each}}
+        </dl>
+    </div>
+
+    <div>
+        <h1>Bewertungen</h1>
+        {{#each global.ratings}}
+        <div class="dRatings">
+            <p> &#9733; &#9733; &#9733; &#9733; &#9734; </p>
+            <p class="dRaitingAuthor"> {{ this.author }} schreibt:</p>
+            <p class="dRaitingDescription"> {{ this.text }} </p>
+        </div>
+        <br>
+        {{/each}}
+    </div>
+</div>
